@@ -5,76 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d14b6e0-1c58-4c19-92fa-dc31866fb23d" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/libs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/MessageGroup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/MessageType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/BackGroundPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/RoundBorder_TextField.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/RoundLightHight_Button.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/FriendListDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/GroupDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/GroupListDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/GroupMemberDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/UserDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fileSend/file.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/3.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/4.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/5.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/file.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/login.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/image/register.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/libs/commons-beanutils-1.8.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/libs/commons-codec-1.10.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/libs/commons-logging-1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/libs/fastjson-1.2.59.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/libs/httpclient-4.5.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/libs/httpcore-4.4.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/libs/jackson-annotations-2.9.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/libs/jackson-core-2.9.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/libs/jackson-databind-2.9.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/libs/okhttp-3.6.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/ClientConnectServerThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/FileClientService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/ManageClientConnectServerThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/MessageClientService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/UserClientService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/AddFriendOrGroupInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/FileChooseInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/FriendChattingInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/FriendInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/GroupChattingInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/LoginInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/RegisterInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/CookiesHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/FailListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/GetUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/HttpClientUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/HttpUrlUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/JsonUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/PathUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/PostUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/ResultInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/ScreenUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/SuccessListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sunyiClient.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/FriendChattingInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/FriendChattingInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/GroupChattingInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/GroupChattingInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,7 +155,8 @@
       <workItem from="1667557680086" duration="7536000" />
       <workItem from="1667565428506" duration="3970000" />
       <workItem from="1667575788053" duration="1691000" />
-      <workItem from="1667606461911" duration="751000" />
+      <workItem from="1667606461911" duration="1710000" />
+      <workItem from="1667613901693" duration="1264000" />
     </task>
     <servers />
   </component>

@@ -137,7 +137,9 @@ public class FriendChattingInterface {
             }
         });
 //        发送socket文件
-        String dest = PathUtils.getPicPath(fileName);
+//        String dest = PathUtils.getPicPath(fileName);
+//        String dest1 =
+        String dest = "E:\\" + fileName;
         fileClientService.sendFileToOne(url, dest, String.valueOf(idList.get(0)), String.valueOf(idList.get(1)));
         messageJPanel.add(jLabel);
         messagePane.getViewport().add(messageJPanel);

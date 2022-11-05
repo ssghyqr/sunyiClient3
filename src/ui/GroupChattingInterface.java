@@ -147,8 +147,9 @@ public class GroupChattingInterface {
             }
         });
 //        发送socket文件
-        String dest = PathUtils.getPicPath(fileName);
+//        String dest = PathUtils.getPicPath(fileName);
 //        String dest = "C:\\Users\\28458\\Desktop\\homework\\大三实践领域\\sunyiClient\\src\\fileGet\\" + fileName;
+        String dest = "E:\\" + fileName;
 //        群发文件消息
         fileClientService.sendFileToAll(url, dest, String.valueOf(ownId), List.of(usersId));
         messageJPanel.add(jLabel);
