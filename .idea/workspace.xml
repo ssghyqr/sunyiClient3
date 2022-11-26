@@ -6,6 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="9d14b6e0-1c58-4c19-92fa-dc31866fb23d" name="变更" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/RoundBorder_TextField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RoundBorder_TextField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/login.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/image/register.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/image/register.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/FileChooseInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/FileChooseInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/FriendChattingInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/FriendChattingInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/FriendInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/FriendInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/GroupChattingInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/GroupChattingInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/LoginInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/LoginInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/RegisterInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/RegisterInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,22 +41,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/Users/28458/Desktop/sunyiSIP",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/28458/Desktop/sunyiSIP&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\28458\Desktop\homework\大三实践领域\sunyiClient\src\fileSend" />
@@ -157,6 +166,11 @@
       <workItem from="1667613901693" duration="1264000" />
       <workItem from="1667615299199" duration="557000" />
       <workItem from="1667616709643" duration="19000" />
+      <workItem from="1667714538477" duration="885000" />
+      <workItem from="1669446484091" duration="908000" />
+      <workItem from="1669448274315" duration="3903000" />
+      <workItem from="1669463160275" duration="141000" />
+      <workItem from="1669473647528" duration="4352000" />
     </task>
     <servers />
   </component>

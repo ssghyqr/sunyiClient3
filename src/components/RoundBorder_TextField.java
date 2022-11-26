@@ -18,11 +18,12 @@ public class RoundBorder_TextField extends JTextField {
         int w = getWidth();
         Graphics2D g2d = (Graphics2D) g.create();
 //        设置画笔颜色
-        g2d.setPaint(Color.gray);
+        g2d.setPaint(Color.white);
         Shape shape = g2d.getClip();
         g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
         g2d.setClip(shape);
 //        绘画
+        g2d.setColor(Color.white);
         g2d.drawRoundRect(0, 0, w - 2, h - 2, h, h);
         g2d.dispose();
         super.paintBorder(g2d);

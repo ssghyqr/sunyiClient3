@@ -89,8 +89,7 @@ public class FriendInterface {
 
     //    组件
     private JFrame friendFrame = new JFrame("好友列表");
-
-    final int WIDTH = 400;
+    final int WIDTH = 600;
 
     final int HEIGHT = 800;
 
@@ -153,6 +152,8 @@ public class FriendInterface {
 
     //    初始化界面
     public void init() throws IOException {
+        //        不可修改大小
+        friendFrame.setResizable(false);
         //        打开添加好友列表
         //        组装好友列表
         JList friendJList = new JList(concatString(adds, concatString(friends, concatString(groups, logOut))));
@@ -242,6 +243,7 @@ public class FriendInterface {
                                             }
 //                                            初始化群聊
                                             GroupChattingInterface groupChattingInterface = new GroupChattingInterface();
+                                            groupChattingInterface.setOwnUserName(userDTO.getUserName());
 //                                            初始化群聊用户列表
                                             String[] array_group_users = groupMemberDTOS.toArray(new String[groupMemberDTOS.size()]);
                                             groupChattingInterface.setUsers(array_group_users);
@@ -312,7 +314,7 @@ public class FriendInterface {
         //        组件框的大小
         @Override
         public Dimension getPreferredSize() {
-            return new Dimension(100, 100);
+            return new Dimension(200, 100);
         }
 
         ;

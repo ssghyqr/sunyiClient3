@@ -79,7 +79,6 @@ public class FriendChattingInterface {
     JTextArea messageDesc = new JTextArea();
 //    显示接收消息
     public void receiveMessage(String text) {
-//        System.out.println("接收私发消息");
         if(text.equals("发送用户未上线")) {
             text = "发送用户未上线";
         }
@@ -92,6 +91,7 @@ public class FriendChattingInterface {
     }
 //    显示发送消息
     public void showMessage(String text) {
+        text = users[0] + ":" + text;
         JLabel jLabel = new JLabel(text);
         Font font = new Font("楷体", Font.PLAIN, 20);
         jLabel.setFont(font);
@@ -114,6 +114,7 @@ public class FriendChattingInterface {
             public void mouseClicked(MouseEvent e) {
                 FileChooseInterface fileChooseInterface = new FileChooseInterface();
                 fileChooseInterface.setImageUrl(url);
+                fileChooseInterface.setWidthAndHeight();
                 fileChooseInterface.init();
             }
         });
@@ -136,6 +137,16 @@ public class FriendChattingInterface {
                 fileChooseInterface.init();
             }
         });
+
+        JLabel picJLabel = new JLabel(users[0]);
+        Font picFont = new Font("楷体", Font.PLAIN, 20);
+        picJLabel.setFont(picFont);
+        picJLabel.setBounds(0,0,150,100);
+        messageJPanel.add(picJLabel);
+        messagePane.getViewport().add(messageJPanel);
+//        真正调用socket发送消息
+        messageClientService.sendMessageToOne(users[0] + ":", String.valueOf(idList.get(0)), String.valueOf(idList.get(1)));
+
 //        发送socket文件
 //        String dest = PathUtils.getPicPath(fileName);
 //        String dest1 =

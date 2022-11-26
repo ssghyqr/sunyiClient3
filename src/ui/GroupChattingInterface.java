@@ -53,7 +53,11 @@ public class GroupChattingInterface {
     JFrame jf = new JFrame("群聊界面");
 //    群聊中自己的id
     public Long ownId;
-//    用户id列表
+    public String ownUserName;
+    public void setOwnUserName(String ownUserName) {
+        this.ownUserName = ownUserName;
+    }
+    //    用户id列表
     public String[] usersId;
     public String[] getUsersId() {
         return usersId;
@@ -102,6 +106,7 @@ public class GroupChattingInterface {
 
     //    显示消息
     public void showMessage(String text) {
+        text = ownUserName + ":" + text;
         JLabel jLabel = new JLabel(text);
         Font font = new Font("楷体", Font.PLAIN, 20);
         jLabel.setFont(font);
@@ -146,6 +151,17 @@ public class GroupChattingInterface {
                 fileChooseInterface.init();
             }
         });
+
+        JLabel picJLabel = new JLabel(ownUserName + ":");
+        Font picFont = new Font("楷体", Font.PLAIN, 20);
+        picJLabel.setFont(picFont);
+        picJLabel.setBounds(0,0,150,100);
+        messageJPanel.add(picJLabel);
+        messagePane.getViewport().add(messageJPanel);
+        messageClientService.sendMessageToAll(ownUserName + ":", String.valueOf(ownId), Arrays.stream(usersId).toList());
+//        真正调用socket发送消息
+
+
 //        发送socket文件
 //        String dest = PathUtils.getPicPath(fileName);
 //        String dest = "C:\\Users\\28458\\Desktop\\homework\\大三实践领域\\sunyiClient\\src\\fileGet\\" + fileName;

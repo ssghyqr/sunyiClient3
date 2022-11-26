@@ -19,8 +19,8 @@ import java.util.Map;
 
 public class RegisterInterface {
     JFrame registerJFrame = new JFrame("注册");
-    final int WIDTH = 500;
-    final int HEIGHT = 300;
+    final int WIDTH = 768;
+    final int HEIGHT = 370;
 
     public void init() throws IOException {
         //        登陆界面总大小
@@ -31,17 +31,17 @@ public class RegisterInterface {
 //        设置logo图标
         registerJFrame.setIconImage(ImageIO.read(new File(PathUtils.getRealPath("logo.jpg"))));
 //        设置背景图片
-        BackGroundPanel backGroundPanel = new BackGroundPanel(ImageIO.read(new File(PathUtils.getRealPath("login.jpg"))));
+        BackGroundPanel backGroundPanel = new BackGroundPanel(ImageIO.read(new File(PathUtils.getRealPath("login.png"))));
         backGroundPanel.setBounds(0, 0, WIDTH, HEIGHT);
 
         //        用户名盒子
         Box userAccountBox = Box.createHorizontalBox();
-        Font userAccountFont = new Font("楷体", Font.PLAIN, 15);
+        Font userAccountFont = new Font("微软雅黑", Font.PLAIN, 15);
         JLabel userAccountLabel = new JLabel();
 //        设置字体
         userAccountLabel.setFont(userAccountFont);
 //        设置字体颜色
-        userAccountLabel.setForeground(Color.BLACK);
+        userAccountLabel.setForeground(Color.white);
 //        标签文本
         userAccountLabel.setText("用户账号");
 //        自定义圆角边框
@@ -54,12 +54,12 @@ public class RegisterInterface {
 
 //        密码盒子
         Box passwordBox = Box.createHorizontalBox();
-        Font passwordFont = new Font("楷体", Font.PLAIN, 15);
+        Font passwordFont = new Font("微软雅黑", Font.PLAIN, 15);
         JLabel passwordLabel = new JLabel();
 //        设置字体
         passwordLabel.setFont(passwordFont);
 //        设置字体颜色
-        passwordLabel.setForeground(Color.BLACK);
+        passwordLabel.setForeground(Color.white);
 //        标签文本
         passwordLabel.setText("密码");
 //        自定义圆角边框
@@ -72,12 +72,12 @@ public class RegisterInterface {
 
 //        用户名盒子
         Box userNameBox = Box.createHorizontalBox();
-        Font userNameFont = new Font("楷体", Font.PLAIN, 15);
+        Font userNameFont = new Font("微软雅黑", Font.PLAIN, 15);
         JLabel userNameLabel = new JLabel();
 //        设置字体
         userNameLabel.setFont(userNameFont);
 //        设置字体颜色
-        userNameLabel.setForeground(Color.BLACK);
+        userNameLabel.setForeground(Color.white);
 //        标签文本
         userNameLabel.setText("用户名");
 //        自定义圆角边框
@@ -90,12 +90,12 @@ public class RegisterInterface {
 
 //        用户简介盒子
         Box userIntroductionBox = Box.createHorizontalBox();
-        Font userIntroductionFont = new Font("楷体", Font.PLAIN, 15);
+        Font userIntroductionFont = new Font("微软雅黑", Font.PLAIN, 15);
         JLabel userIntroductionLabel = new JLabel();
 //        设置字体
         userIntroductionLabel.setFont(userIntroductionFont);
 //        设置字体颜色
-        userIntroductionLabel.setForeground(Color.BLACK);
+        userIntroductionLabel.setForeground(Color.white);
 //        标签文本
         userIntroductionLabel.setText("用户简介");
 //        自定义圆角边框
@@ -108,12 +108,12 @@ public class RegisterInterface {
 
 //        手机号盒子
         Box userPhoneBox = Box.createHorizontalBox();
-        Font userPhoneFont = new Font("楷体", Font.PLAIN, 15);
+        Font userPhoneFont = new Font("微软雅黑", Font.PLAIN, 15);
         JLabel userPhoneLabel = new JLabel();
 //        设置字体
         userPhoneLabel.setFont(userPhoneFont);
 //        设置字体颜色
-        userPhoneLabel.setForeground(Color.BLACK);
+        userPhoneLabel.setForeground(Color.white);
 //        标签文本
         userPhoneLabel.setText("用户手机号");
 //        自定义圆角边框
@@ -204,6 +204,7 @@ public class RegisterInterface {
 
         //        组装注册页面
         Box vBaseRegister = Box.createVerticalBox();
+        vBaseRegister.add(Box.createVerticalStrut(80));
         vBaseRegister.add(userAccountBox);
         vBaseRegister.add(Box.createVerticalStrut(20));
         vBaseRegister.add(passwordBox);

@@ -28,8 +28,8 @@ public class LoginInterface {
     private MessageClientService messageClientService = new MessageClientService();//对象用户私聊/群聊.
     private FileClientService fileClientService = new FileClientService();//该对象用户传输文件
     JFrame jFrameLogin = new JFrame("登陆界面");
-    final int WIDTH = 500;
-    final int HEIGHT = 300;
+    final int WIDTH = 768;
+    final int HEIGHT = 370;
 
     //    初始化组装视图
     public void init() throws IOException {
@@ -42,17 +42,17 @@ public class LoginInterface {
 //        设置logo图标
         jFrameLogin.setIconImage(ImageIO.read(new File(PathUtils.getRealPath("1.jpg"))));
         //设置窗口的内容,BackGroundPanel为继承JPanel属性
-        BackGroundPanel bgPanel = new BackGroundPanel(ImageIO.read(new File(PathUtils.getRealPath("login.jpg"))));
+        BackGroundPanel bgPanel = new BackGroundPanel(ImageIO.read(new File(PathUtils.getRealPath("login.png"))));
         bgPanel.setBounds(0, 0, WIDTH, HEIGHT);
 
 //        用户名盒子
         Box usernameBox = Box.createHorizontalBox();
-        Font usernameFont = new Font("楷体", Font.PLAIN, 15);
+        Font usernameFont = new Font("微软雅黑", Font.PLAIN, 15);
         JLabel userLabel = new JLabel();
 //        设置字体
         userLabel.setFont(usernameFont);
 //        设置字体颜色
-        userLabel.setForeground(Color.BLACK);
+        userLabel.setForeground(Color.white);
 //        标签文本
         userLabel.setText("用户账号");
 //        自定义圆角边框
@@ -65,11 +65,11 @@ public class LoginInterface {
 
 //        密码盒子
         Box passwordBox = Box.createHorizontalBox();
-        Font passwordFont = new Font("楷体", Font.PLAIN, 15);
+        Font passwordFont = new Font("微软雅黑", Font.PLAIN, 15);
         JLabel passwordLabel = new JLabel();
         passwordLabel.setFont(passwordFont);
-        passwordLabel.setForeground(Color.black);
-        passwordLabel.setText("密码");
+        passwordLabel.setForeground(Color.white);
+        passwordLabel.setText("密码        ");
         RoundBorder_TextField passwordField = new RoundBorder_TextField(15);
         passwordField.setOpaque(false);
         passwordBox.add(passwordLabel);
@@ -154,11 +154,11 @@ public class LoginInterface {
 
 //        组装整体界面
         Box loginBox = Box.createVerticalBox();
-        loginBox.add(Box.createVerticalStrut(50));
+        loginBox.add(Box.createVerticalStrut(120));
         loginBox.add(usernameBox);
-        loginBox.add(Box.createVerticalStrut(50));
+        loginBox.add(Box.createVerticalStrut(20));
         loginBox.add(passwordBox);
-        loginBox.add(Box.createVerticalStrut(50));
+        loginBox.add(Box.createVerticalStrut(20));
         loginBox.add(loginBtnBox);
 
         bgPanel.add(loginBox);
