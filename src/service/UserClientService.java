@@ -11,8 +11,6 @@ import java.net.InetAddress;
 import java.net.Socket;
 
 /**
- * @author 韩顺平
- * @version 1.0
  * 该类完成用户登录验证和用户注册等功能.
  */
 public class UserClientService {

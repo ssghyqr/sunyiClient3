@@ -58,8 +58,8 @@ public class AddFriendOrGroupInterface {
 
     private JFrame addFrame = new JFrame("添加好友或群聊");
     //    设置长和宽
-    final int WIDTH = 500;
-    final int HEIGHT = 400;
+    final int WIDTH = 768;
+    final int HEIGHT = 370;
     //    自身对象
     private Long ownId = 1L;
 
@@ -219,15 +219,15 @@ public class AddFriendOrGroupInterface {
 //        设置logo图标
         addFrame.setIconImage(ImageIO.read(new File(PathUtils.getRealPath("1.jpg"))));
         //设置窗口的内容,BackGroundPanel为继承JPanel属性
-        BackGroundPanel bgPanel = new BackGroundPanel(ImageIO.read(new File(PathUtils.getRealPath("register.png"))));
+        BackGroundPanel bgPanel = new BackGroundPanel(ImageIO.read(new File(PathUtils.getRealPath("login.png"))));
         bgPanel.setBounds(0, 0, WIDTH, HEIGHT);
 
 //        搜索群聊或者搜索用户盒子
         Box searchBox = Box.createHorizontalBox();
-        Font searchFont = new Font("楷体", Font.PLAIN, 15);
+        Font searchFont = new Font("微软雅黑", Font.PLAIN, 15);
         JLabel searchLabel = new JLabel();
         searchLabel.setFont(searchFont);
-        searchLabel.setForeground(new Color(7, 188, 252));
+        searchLabel.setForeground(Color.white);
         searchLabel.setText("搜索用户或群聊");
         //        自定义圆角边框
         RoundBorder_TextField searchTextField = new RoundBorder_TextField(15);
@@ -249,10 +249,10 @@ public class AddFriendOrGroupInterface {
         backBtn(backBtn);
 //        搜索列表文本提示盒子
         Box messageBox = Box.createHorizontalBox();
-        Font messageFont = new Font("楷体", Font.PLAIN, 15);
+        Font messageFont = new Font("微软雅黑", Font.PLAIN, 15);
         JLabel messageLabel = new JLabel();
         messageLabel.setFont(messageFont);
-        messageLabel.setForeground(new Color(7, 188, 252));
+        messageLabel.setForeground(Color.white);
         messageLabel.setText("查询结果列表:");
         messageBox.add(messageLabel);
 
@@ -288,10 +288,10 @@ public class AddFriendOrGroupInterface {
                             GroupDTO groupDTO = new ObjectMapper().convertValue(result.getData(), GroupDTO.class);
 //                            设置群聊对象
                             setJoinGroupDTO(groupDTO);
-                            Font groupFont = new Font("楷体", Font.PLAIN, 15);
+                            Font groupFont = new Font("微软雅黑", Font.PLAIN, 15);
                             JLabel groupLabel = new JLabel();
                             groupLabel.setFont(groupFont);
-                            groupLabel.setForeground(new Color(7, 188, 252));
+                            groupLabel.setForeground(Color.white);
                             groupLabel.setText(groupDTO.getGroupName());
                             RoundLightHight_Button addGroupBtn = new RoundLightHight_Button("添加");
 //                            绑定事件
@@ -337,10 +337,10 @@ public class AddFriendOrGroupInterface {
                         } else {
 //                                java对象映射
                             userDTO = new ObjectMapper().convertValue(result.getData(), UserDTO.class);
-                            Font userFont = new Font("楷体", Font.PLAIN, 15);
+                            Font userFont = new Font("微软雅黑", Font.PLAIN, 15);
                             JLabel userLabel = new JLabel();
                             userLabel.setFont(userFont);
-                            userLabel.setForeground(new Color(7, 188, 252));
+                            userLabel.setForeground(Color.white);
                             userLabel.setText(userDTO.getUserName());
                             RoundLightHight_Button addUserBtn = new RoundLightHight_Button("添加");
 //                            绑定事件

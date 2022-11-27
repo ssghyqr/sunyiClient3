@@ -10,8 +10,6 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * @author 韩顺平
- * @version 1.0
  * 该类/对象，提供和消息相关的服务方法
  */
 public class MessageClientService {
